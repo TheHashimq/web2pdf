@@ -32,15 +32,10 @@ Before you begin, ensure you have met the following requirements:
 Follow these steps to set up the project on your local machine:
 
 ```bash
-# Clone the repository
 git clone https://github.com/thehashimq/web2pdf
-# Navigate into the project directory
 cd web2pdf
-# Create a build directory and navigate into it
 mkdir build && cd build
-# Run CMake to configure the project
 cmake ..
-# Build the project
 make
 ```
 
