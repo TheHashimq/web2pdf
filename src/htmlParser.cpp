@@ -90,7 +90,7 @@ std::vector<std::string>
 HtmlParser::validateLink(std::vector<std::string> links, std::string baseurl) {
   std::vector<std::string> newLinks;
   for (int i = 0; i < links.size(); i++) {
-    if ((links[i].find("https://" || "http://"))) {
+    if (links[i].find("https://" || "http://") == std::string::npos) {
       newLinks.push_back(baseurl + links[i]);
     } else {
       newLinks.push_back(links[i]);
